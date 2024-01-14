@@ -100,3 +100,9 @@ h1 {
     }
 
   }
+
+  @media only screen and (max-width: 768px) {
+    .intro-heading {
+      line-height: 35px;
+    }
+  }

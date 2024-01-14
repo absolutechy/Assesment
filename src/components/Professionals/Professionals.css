@@ -1,12 +1,3 @@
-/* #random {
-  margin-right: 67px;
-} */
-
-.pro-doctors {
-    border: 2px solid red;
-    background-color: #F6FAFD;;
-  }
-  
 .pro-docs-container {
   display: block;
 }
@@ -46,5 +37,11 @@
   .doctor-text {
     width: 40%;
     text-align: start;
+  }
+}
+
+@media only screen and (max-width: 576px) {
+  .doctor-heading {
+    line-height: 40px;
   }
 }

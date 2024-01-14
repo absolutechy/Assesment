@@ -10,7 +10,9 @@ import Telegram from "../../assets/telegram.png"
 const End = () => {
   return (
     <section className="end">
-        <img src={ScrollUp} className="scrollup-icon" />
+        <a href="#intro">
+            <img src={ScrollUp} className="scrollup-icon" />
+        </a>
         <img src={logo} className="end-logo" />
         <div className="links">
             <ul>

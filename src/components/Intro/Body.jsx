@@ -1,6 +1,7 @@
 import doc from '../../assets/intro-doc.svg'
 import scrollIcon from '../../assets/scroll.svg'
 import userReview1 from '../../assets/user1.png'
+import userReview2 from '../../assets/user4.svg'
 import icon from '../../assets/image 29 (Traced).png'
 import rating from '../../assets/stars.png'
 import Review from './Review'
@@ -8,10 +9,10 @@ import "./Intro.css"
 
 const Body = () => {
   return (
-    <section className="intro">
+    <section className="intro" id='intro'>
        <div className="content">
             <div className="intro-text">
-                <h1>Adult And <span className="intro-highlights" >Youth Mental Health </span>Services At <span className="intro-highlights" >You Fingertips</span></h1>
+                <h1 className='intro-heading'>Adult And <span className="intro-highlights" >Youth Mental Health </span>Services At <span className="intro-highlights" >You Fingertips</span></h1>
                 <p>
                 Mental Support offers access to a trained and qualified team of clinicians though our on demand network for individuals seeking counseling services.
                 </p>
@@ -21,7 +22,7 @@ const Body = () => {
                 <img src={doc} className="doctor" alt="" />
                 <Review
                     id={1} 
-                    userReview1={userReview1} 
+                    userReview1={userReview2} 
                     icon={icon} 
                     rating={rating}
                     userName="Ralph Edwards"
@@ -39,7 +40,7 @@ const Body = () => {
                 />
             </div>
        </div>
-        <a href="#" className="scroll-btn">
+        <a href="#professionals" className="scroll-btn">
             <img src={scrollIcon} className="scroll-icon" alt="Scroll down" />
             <span className="scroll-text">Scroll down</span>
         </a>

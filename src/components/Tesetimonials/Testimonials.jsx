@@ -1,4 +1,5 @@
 import { useState } from "react"
+import Modal from "react-modal"
 import User from "./User"
 import CurrentUser from "./CurrentUser"
 import User1 from "../../assets/user1.png"
@@ -8,13 +9,21 @@ import Icon from "../../assets/image 29 (Traced).png"
 import rating from "../../assets/Stars.png"
 import "./Testimonials.css"
 
+Modal.setAppElement('#root')
+
 const Testimonials = () => {
 
     const [activeTab, setActiveTab] = useState(1)
+    const [modalOpen, setModalOpen] = useState(false)
     
     const handleTabClick = (tabNumber) => {
         setActiveTab(tabNumber);
+        setModalOpen(true)
       };
+
+    const closeModal = () => {
+        setModalOpen(false);
+    };
 
   return (
     <section className="testimonials">
@@ -49,27 +58,67 @@ const Testimonials = () => {
                 id={3} 
             />
         </div>
-        { activeTab === 1 && <CurrentUser 
+        {window.innerWidth < 768 ? (
+                <Modal
+                isOpen={modalOpen}
+                onRequestClose={closeModal}
+                contentLabel="User Details Modal"
+              >
+                {/* Content for the modal */}
+                {activeTab === 1 && (
+                  <CurrentUser
+                    User={User1}
+                    icon={Icon}
+                    rating={rating}
+                    name="Bessie Copper"
+                    title="Amazon CEO"
+                  />
+                )}
+                {activeTab === 2 && (
+                  <CurrentUser
+                    User={User2}
+                    icon={Icon}
+                    rating={rating}
+                    name="Leslie Alexander"
+                    title="Medical Assistant"
+                  />
+                )}
+                {activeTab === 3 && (
+                  <CurrentUser
+                    User={User3}
+                    icon={Icon}
+                    rating={rating}
+                    name="Courtney Henry"
+                    title="Marketing Coordinator"
+                  />
+                )}
+                <button onClick={closeModal}>Close Modal</button>
+              </Modal>
+        ) : (
+            <>
+                { activeTab === 1 && <CurrentUser 
                                     User={User1} 
                                     icon={Icon} 
                                     rating={rating}
                                     name="Bessie Copper"
                                     title="Amazon CEO"
                                 />}
-        { activeTab === 2 && <CurrentUser 
-                                    User={User2} 
-                                    icon={Icon} 
-                                    rating={rating}
-                                    name="Leslie Alexander"
-                                    title="Medical Assistant" 
+                { activeTab === 2 && <CurrentUser 
+                                            User={User2} 
+                                            icon={Icon} 
+                                            rating={rating}
+                                            name="Leslie Alexander"
+                                            title="Medical Assistant" 
+                                            />}
+                { activeTab === 3 && <CurrentUser 
+                                        User={User3} 
+                                        icon={Icon} 
+                                        rating={rating} 
+                                        name="Courtney Henry"
+                                        title="Marketing Coordinator"
                                     />}
-        { activeTab === 3 && <CurrentUser 
-                                User={User3} 
-                                icon={Icon} 
-                                rating={rating} 
-                                name="Courtney Henry"
-                                title="Marketing Coordinator"
-                            />}
+            </>
+        )}
     </section>
   )
 }

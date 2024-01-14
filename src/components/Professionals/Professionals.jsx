@@ -2,7 +2,7 @@ import doctorsTeamImage from '../../assets/docsTeam.svg'
 import "./Professionals.css"
 const Professionals = () => {
   return (
-    <section className="pro-doctors">
+    <section className="pro-doctors" id='professionals'>
         <div className="pro-docs-container">
             <img src={doctorsTeamImage} className='doctors-image' alt="" />
             <div className="doctor-text">

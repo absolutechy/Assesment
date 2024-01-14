@@ -8,6 +8,7 @@ import { Header,
          Testimonials, 
          End 
         } from './components/main'
+// import 'react-modal/style/react-modal.css'
 import './App.css'
 
 
