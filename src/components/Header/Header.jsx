@@ -15,19 +15,19 @@ const Header = () => {
             <div className="collapse navbar-collapse" id="navmenu">
                 <ul className="navbar-nav ms-auto">
                     <li className="nav-item px-3">
-                        <a href="#learn" className="nav-link">Home</a>
+                        <a href="#home" className="nav-link">Home</a>
                     </li>
                     <li className="nav-item px-3">
-                        <a href="#questions" className="nav-link">About</a>
+                        <a href="#about" className="nav-link">About</a>
                     </li>
                     <li className="nav-item px-3">
-                        <a href="#instructors" className="nav-link">What we Treat</a>
+                        <a href="#treatment" className="nav-link">What we Treat</a>
                     </li>
                     <li className="nav-item px-3">
-                        <a href="#instructors" className="nav-link">Blog</a>
+                        <a href="#blog" className="nav-link">Blog</a>
                     </li>
                     <li className="nav-item px-3">
-                        <a href="#instructors" className="nav-link">Contact Us</a>
+                        <a href="#contact" className="nav-link">Contact Us</a>
                     </li>
 
                 </ul>
