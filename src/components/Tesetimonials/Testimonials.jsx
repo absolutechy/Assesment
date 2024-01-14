@@ -6,7 +6,7 @@ import User1 from "../../assets/user1.png"
 import User2 from "../../assets/user2.png"
 import User3 from "../../assets/user3.png"
 import Icon from "../../assets/image 29 (Traced).png"
-import rating from "../../assets/Stars.png"
+import rating from "../../assets/stars.png"
 import "./Testimonials.css"
 
 Modal.setAppElement('#root')
