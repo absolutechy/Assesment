@@ -15,10 +15,10 @@ Main technologies used, such as React, Vite, and additional libraries like `reac
 
 ```bash
 # Clone the repository
-git clone https://github.com/your-username/your-repository.git
+git clone https://github.com/absolutechy/Assesment.git
 
 # Navigate to the project folder
-cd your-repository
+cd Assesment
 
 # Install dependencies
 npm install
