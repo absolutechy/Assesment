@@ -1,0 +1,35 @@
+.extras {
+    padding: 2em 0 0 2em;
+    height: 350px;
+    border-radius: 12px;
+    transition: box-shadow 0.3s ease;
+    padding: 3em;
+}
+
+.extras:hover {
+    box-shadow: 0px 26px 50px 0px #7789A414;
+}
+
+.icon {
+    margin-bottom: 3em;
+    height: 75px;
+}
+
+.extras-title {
+    font-feature-settings: 'clig' off, 'liga' off;
+    font-family: 'Poppins';
+    font-size: 24px;
+    font-weight: 500;
+    color: #243D4C;
+    margin-bottom: 1em;
+}
+
+.extras-description {
+    color: #243D4C;
+    font-feature-settings: 'clig' off, 'liga' off;
+    font-family: Poppins;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    opacity: 0.8;
+}

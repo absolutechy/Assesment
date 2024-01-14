@@ -1,0 +1,25 @@
+.feature {
+    padding: 2em 0 0 2em;
+    height: 260px;
+    border-radius: 12px;
+    transition: border-bottom 0.3s ease, box-shadow 0.3s ease;
+}
+
+.feature:hover {
+    border-bottom: 10px solid #A0D05A;
+    box-shadow: 0px 26px 50px 0px #7789A414;
+}
+
+.icon {
+    margin-bottom: 3em;
+    height: 75px;
+}
+
+.feature-text {
+    font-feature-settings: 'clig' off, 'liga' off;
+    font-family: 'Poppins';
+    font-size: 24px;
+    font-weight: 500;
+    color: #243D4C;
+    margin: 0;
+}

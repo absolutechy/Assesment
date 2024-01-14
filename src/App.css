@@ -1,0 +1,10 @@
+* {
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  box-sizing: border-box;
+}
+
+#root {
+  background-color: #F6FAFD;
+}
+

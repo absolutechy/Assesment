@@ -1,0 +1,50 @@
+/* #random {
+  margin-right: 67px;
+} */
+
+.pro-doctors {
+    border: 2px solid red;
+    background-color: #F6FAFD;;
+  }
+  
+.pro-docs-container {
+  display: block;
+}
+
+.doctors-image {
+  margin-top: 4em;
+  width: 100%;
+}
+
+.doctor-text {
+  margin: 2em 4em 0 4em;
+  text-align: center;
+}
+
+.text-highlight {
+  color: #77AC28;
+}
+
+.doctor-description {
+  margin-bottom: 2em;
+}
+
+@media only screen and (min-width: 768px) {
+  .pro-doctors {
+    padding: 10em 2em 1em 0;
+  }
+  .pro-docs-container {
+    display: flex;
+    align-items: center;
+  }
+
+  .doctors-image {
+    margin-right: 4em;
+    width: 50%;
+  }
+
+  .doctor-text {
+    width: 40%;
+    text-align: start;
+  }
+}

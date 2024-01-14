@@ -1,0 +1,8 @@
+export { default as Header} from './Header/Header'
+export { default as Body} from './Intro/Body'
+export { default as Professionals } from './Professionals/Professionals'
+export { default as FeaturesSection } from './Features/FeaturesSection'
+export { default as Phone } from './Phone/Phone'
+export { default as CTA } from './CTA/CTA'
+export { default as Testimonials } from './Tesetimonials/Testimonials'
+export { default as End } from './End/End'

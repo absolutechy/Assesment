@@ -1,0 +1,102 @@
+h1 {
+    line-height: 50px;
+    font-weight: 600;
+    margin-bottom: 0.4em;
+}
+
+.intro {
+    background: url('../../assets/Rectangle 2.png') no-repeat center;
+    background-size: cover;
+    padding: 4em 0;
+    /* height: 100%; */
+    /* overflow:scroll; */
+    /* position: relative; */
+  }
+  
+  .intro-container{
+    position: relative;
+  }
+
+  .content {
+    margin: 0 4em;
+    text-align: center;
+  }
+
+  .intro-text {
+    color: #243D4C;
+  }
+  
+  .intro-highlights {
+    color: #77AC28;
+  }
+  
+  .intro-btn {
+    background-image: linear-gradient(#5E9CD3, #3773A9);
+    color: white;
+    padding: 19px, 25px, 19px, 25px;
+    margin-top: 2em;
+    border: none;
+    width: 210px;
+    height: 55px;
+    border-radius: 10px;
+    font-family: 'Roboto', sans-serif;
+  }
+  
+  .scroll-btn {
+    position: absolute;
+    left: 45%;
+    display: inline-block; /* Make the anchor a block-level container */
+    text-align: center; /* Center the content horizontally */
+    text-decoration: none;
+    color: #B6BCC9; /* Set your desired text color */
+    display: none;
+  }
+  
+  .scroll-icon {
+    display: block; /* Make the image a block-level element */
+    margin: 0 auto 5px; /* Center the image horizontally and add margin to the bottom */
+    width: 50px; /* Adjust the width of the icon as needed */
+    height: 50px; /* Adjust the height of the icon as needed */
+  }
+  
+  .images-container {
+    /* border: 2px solid red; */
+    margin-right: 4em;
+    position: relative;
+  }
+
+  .doctor {
+    display: none;
+    width: 100%;
+    height: auto;
+  }
+
+  .img-holder {
+    margin-top: 2.5em;
+  } 
+
+  @media only screen and (min-width: 768px) {
+      .intro {
+          height: 695px;
+      }
+  
+    .intro-text {
+        max-width: 500px;
+    }
+  
+    .content {
+        display: flex;
+        justify-content: space-between;
+        gap: 50px;
+        text-align:start;
+    }
+
+    .doctor {
+        display: block;
+    }
+
+    .scroll-btn {
+        display: block;
+    }
+
+  }

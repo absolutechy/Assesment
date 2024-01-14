@@ -1,0 +1,64 @@
+.mobile-downloads {
+    background-color: #F6FAFD;
+    background-image: url(../../assets/ellipse-mobile.svg); 
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 4em;
+    width: 100vw;
+}
+
+.mobile {
+    width: 100%;
+}
+
+.download-info h1 {
+    color: #fff;
+    width: 660px;
+    margin-bottom: 1em;
+    line-height: 60px;
+    font-size: 3rem;
+}
+
+.google {
+    margin-right: 2em;
+}
+
+@media only screen and (max-width: 994px) {
+    .download-info {
+        width: 100%;
+    }
+
+    .download-info h1 {
+        font-size: 2rem;
+        line-height: 50px;
+        width: 100%;
+    }
+
+    .google {
+        display: block;
+        margin-bottom: 2em;
+    }
+}
+
+@media only screen and (max-width: 572px) {
+
+    .download-info h1 {
+        font-size: 1rem;
+        line-height: 25px;
+    }
+    .google, .apple {
+        width: 100px;
+        display: inline;
+        margin-right: 1em;
+        margin-bottom: 0;
+    }
+
+    .mobile-div {
+        width: 70%;
+    }
+}
