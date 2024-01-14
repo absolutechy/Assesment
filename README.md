@@ -1,8 +1,37 @@
-# React + Vite
+# Figma to React Conversion
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Table of Contents
 
-Currently, two official plugins are available:
+- [Introduction](#introduction)
+- [Getting Started](#getting-started)
+- [Usage](#usage)
+- [Dependencies](#dependencies)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Introduction
+
+Main technologies used, such as React, Vite, and additional libraries like `react-modal`.
+
+## Getting Started
+
+```bash
+# Clone the repository
+git clone https://github.com/absolutechy/Assesment.git
+
+# Navigate to the project folder
+cd Assesment
+
+# Install dependencies
+npm install
+
+
+###Usage
+
+```bash
+# Run the development server
+npm run dev
+
+###Dependencies
+
+React - A JavaScript library for building user interfaces.
+Vite - A fast development server and build tool for modern web applications.
+react-modal - Accessible modal dialog component for React applications.
